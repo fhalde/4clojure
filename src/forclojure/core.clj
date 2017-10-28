@@ -18,7 +18,16 @@
 (defn prob-6 [] (set '(:a :b :a :c :d)))
 (defn prob-6-ans [] #{:a :b :c :d})
 
+(defn prob-7 [] (= '(1 1 2 3) (conj '(1 2 3) 1)))
+(defn prob-8 [] (=  [1 2 3 1] (conj  [1 2 3] 1)))
+(defn prob-9 [] (= #{1 2 3}   (conj #{1 2 3} 1))) 
+(defn prob-14 [] (= {:a 1 :b 2 :c 3}   (conj {:a 1 :b 2} [:c 3])))
 
+(defn prob-10 [] (vec '(1 2 3)))
+(defn prob-10 [] (vector 1 2 3))
+(defn prob-11 [] (hash-map :a 1 :b 2))
 
+(defn prob-12 [] ((prob-11) :b))
+(defn prob-13 [] (:b (prob-11)))
 
-
+(defn prob-15 [] (= (first '(1 2 3)) (second '(2 1 3)) (last '(3 2 1))))
